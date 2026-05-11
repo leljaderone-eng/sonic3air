@@ -507,7 +507,7 @@ namespace
 
 	uint32 Renderer_getWidthOfSprite(uint64 key)
 	{
-		if (!SpriteCollection::instance().hasSprite(key))
+		if (!Renderer_hasCustomSprite(key))
 		{
 			return 0;
 		}
@@ -517,7 +517,7 @@ namespace
 	
 	uint32 Renderer_getHeightOfSprite(uint64 key)
 	{
-		if (!SpriteCollection::instance().hasSprite(key))
+		if (!Renderer_hasCustomSprite(key))
 		{
 			return 0;
 		}
@@ -527,7 +527,7 @@ namespace
 	
 	uint32 Renderer_getCenterXOfSprite(uint64 key)
 	{
-		if (!SpriteCollection::instance().hasSprite(key))
+		if (!Renderer_hasCustomSprite(key))
 		{
 			return 0;
 		}
@@ -538,7 +538,7 @@ namespace
 	
 	uint32 Renderer_getCenterYOfSprite(uint64 key)
 	{
-		if (!SpriteCollection::instance().hasSprite(key))
+		if (!Renderer_hasCustomSprite(key))
 		{
 			return 0;
 		}
